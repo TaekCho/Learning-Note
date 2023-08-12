@@ -1,0 +1,31 @@
+
+Function Expression is when a variable is declared with a value of a function.
+
+  ex) let add = function ( num1, num2 ) {
+                    return num1 + num2;
+                    };
+                    ^^ this semicolon is added for function expression.
+
+Function Declaration is when function is declared. 
+
+  ex) function add ( num1, num2 ) {
+                    return num1 + num2;
+                    }
+
+
+
+
+
+In case of function declaration, even if the function is called before the function is declared, the function will still be called because it is "hoisted".
+ 
+  ex) add(10,20) // return 30
+      function add ( num1, num2 ) {
+                    return num1 + num2;
+                    }
+
+However, in case of function expression, the function cannot be called before function expression
+
+  ex) add(20,30) // Uncaught ReferenceError: add is not defined
+      ex) let add = function ( num1, num2 ) {
+                    return num1 + num2;
+                    };
