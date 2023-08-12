@@ -15,7 +15,6 @@ Function Declaration is when function is declared.
 
 
 
-
 In case of function declaration, even if the function is called before the function is declared, the function will still be called because it is "hoisted".
  
   ex) add(10,20) // return 30
@@ -29,3 +28,7 @@ However, in case of function expression, the function cannot be called before fu
       ex) let add = function ( num1, num2 ) {
                     return num1 + num2;
                     };
+
+It is because of the way JS works. In JS, before executing a script, all function declarations are found and created. 
+
+In other words, the functions are created in the initialization stage.
