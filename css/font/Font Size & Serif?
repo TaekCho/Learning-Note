@@ -1,0 +1,30 @@
+Types of font sizes:
+
+  1. 1 px = 1/96 inch
+  2. 1 pt = 1/72 inch
+  3. 1 em = 100% of parent element
+  4. 1 rem = 100% of root
+
+font-weight:
+
+  Font weight can be relatively set using "lighter" or "bolder" which set the font size bigger than the parent element by 100.
+
+
+The difference between the sans-serif & serif:
+
+  1. Sans-serif looks simpler as it does not have pointy corners.
+  2. Serif looks formal. Times New Roman is a good example of serif fonts.
+
+
+When the name of a font has spaces in-between:
+
+  in such a case, we wrap it with `"` like a string.
+    ex) h1 {
+          font-family: "Times New Korean", serif
+        }
+
+    otherwise,
+
+        h2 {
+          font-family: Helvetica, sans-serif
+        }
