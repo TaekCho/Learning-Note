@@ -1,10 +1,10 @@
 Flex boxes can be stretched or shrunk by using `flex-grow` and `flex-shrink`.
 Both `flex-grow` and `flex-shrink` has to be set for children flex boxes, not the container.
 
-The `flex-grow`, when it is set true(flex-grow: 1;), will fill up the remaining space by stretching each element wide enough to fill up the remaining space.
+The `flex-grow`, when it is set(flex-grow: 1;), will fill up the remaining space by stretching each element wide enough to fill up the remaining space.
 This attribute must be applied to the child element of the flex-container.
 
-The `flex-shrink`, when it is set true(flex-shirnk: 1;), will shrink until the box is set at the shortest possible length(depending on the size of the content, or the longest letter in a sentence).
+The `flex-shrink`, when it is set(flex-shirnk: 1;), will shrink until the box is set at the shortest possible length(depending on the size of the content, or the longest letter in a sentence).
 BUT, it doesn't shrink when the flex-container has a `flex-wrap` attribute set as `wrap`, as overflowing boxes will be wrapped around, moving overflowing boxes to the next lines.
 
 
@@ -22,3 +22,21 @@ Shorthand for all those `flex-grow`, `flex-shrink` and `flex-basis`, respectivel
       ( ^ flex-grow: 1;,
           ^flex-shrink: 1;,
             ^flex-basis: 0; )
+
+Surprisingly, it can be shortened futher. The code above can be shortened and still function just the same with:
+
+  flex: 1;
+
+To proportionally change the sizes of each flex-box, we can do a trick as below:
+
+  .box-1 {
+    flex: 1;
+  }
+  .box-2 {
+    flex: 2;
+  }
+  .box-3 {
+    flex: 3;
+  }
+
+With the code above, the `.box-3` will be always three times as big as `.box-1`.
