@@ -18,25 +18,7 @@ When they grow and shrink, the size of each flex box won't be the same because,
 
 Shorthand for all those `flex-grow`, `flex-shrink` and `flex-basis`, respectively, will be as follow:
 
-  flex: 1 1 0;
+  flex: 1 1 0(px);
       ( ^ flex-grow: 1;,
           ^flex-shrink: 1;,
-            ^flex-basis: 0; )
-
-Surprisingly, it can be shortened futher. The code above can be shortened and still function just the same with:
-
-  flex: 1;
-
-To proportionally change the sizes of each flex-box, we can do a trick as below:
-
-  .box-1 {
-    flex: 1;
-  }
-  .box-2 {
-    flex: 2;
-  }
-  .box-3 {
-    flex: 3;
-  }
-
-With the code above, the `.box-3` will be always three times as big as `.box-1`.
+            ^flex-basis: 0px; )
