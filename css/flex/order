@@ -1,0 +1,17 @@
+There are some attributes to be set at the child level of a flex box, and it includes 'order'.
+
+The `order` attribute works like an index, so when the order of elemeents is set as following:
+  
+  .last-element {
+    order:2000
+  }
+  .element-a {
+    order: 500
+  }
+  .element-b {
+    order: 643
+  }
+
+  it would still align the properties in the order of element-a, element-b, last-element, according to the 'order' number assigned to each.
+
+  
