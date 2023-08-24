@@ -10,3 +10,6 @@ HOWEVER, it is IMPORTANT that flex-basis is set in the child flex elements of th
         /* this will set the size of y-axis, or height, in this case */
         flex-basis: 100px;
       }
+
+When you need to adjust and align the sizes of the cross-axis so they all have same sizes,
+  'display: inline-flex' may do the job.
