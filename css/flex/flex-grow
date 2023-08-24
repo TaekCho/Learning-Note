@@ -1,0 +1,24 @@
+Flex boxes can be stretched or shrunk by using `flex-grow` and `flex-shrink`.
+Both `flex-grow` and `flex-shrink` has to be set for children flex boxes, not the container.
+
+The `flex-grow`, when it is set true(flex-grow: 1;), will fill up the remaining space by stretching each element wide enough to fill up the remaining space.
+This attribute must be applied to the child element of the flex-container.
+
+The `flex-shrink`, when it is set true(flex-shirnk: 1;), will shrink until the box is set at the shortest possible length(depending on the size of the content, or the longest letter in a sentence).
+BUT, it doesn't shrink when the flex-container has a `flex-wrap` attribute set as `wrap`, as overflowing boxes will be wrapped around, moving overflowing boxes to the next lines.
+
+
+When they grow and shrink, the size of each flex box won't be the same because,
+  the default value of flex-basis is auto(flex-basis: auto;), so the box size depends on the size of the content in the box.
+
+  To prevent that, we can set the flex-basis as 0(flex-basis: 0;),
+    which will make all the sizes equal to one another.
+
+
+
+Shorthand for all those `flex-grow`, `flex-shrink` and `flex-basis`, respectively, will be as follow:
+
+  flex: 1 1 0;
+      ( ^ flex-grow: 1;,
+          ^flex-shrink: 1;,
+            ^flex-basis: 0; )
