@@ -1,0 +1,12 @@
+Flex-basis: it decides the size of main-axis, so x-axis in case of 'flex-direction: row' OR the size of y-axis in case of 'flex-direction: column'.
+
+HOWEVER, it is IMPORTANT that flex-basis is set in the child flex elements of the flex container.
+  ex) .container {
+        display: flex;
+        gap: 1 rem;
+        flex-direction: column;
+      }
+      .flex-element {
+        /* this will set the size of y-axis, or height, in this case */
+        flex-basis: 100px;
+      }
