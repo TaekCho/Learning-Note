@@ -1,0 +1,23 @@
+Grid VS flex
+Basically, to my understanding, grid looks more organized than flex.
+
+How to use Grid:
+  Set `display: grid` for the container of grid elements.
+  Also, set `grid-template-row` and `grid-template-column` OR `grid-template` which includes both row and column settings.
+    
+  ex) .chess-pattern {
+        display: grid;
+        grid-template: 100px 100px 100px 100px 100px 100px 100px 100px / 100px 100px 100px 100px 100px 100px 100px 100px;
+        width: 800px;
+      }
+
+      OR 
+
+      .chess-pattern {
+        display: grid;
+        grid-template-rows: repeat(8, 100px);
+        grid-template-column: repeat(8, 100px);
+      }
+
+
+`grid-auto` attribute sets up the width or height of overflowing elements. ( grid-auto-rows / grid-auto-columns )
