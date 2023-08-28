@@ -30,3 +30,7 @@ $(document)
 events
 .click(function);
 .keypress(function);
+
+
+Element removal:
+$('element').remove()
