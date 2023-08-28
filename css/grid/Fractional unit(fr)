@@ -1,0 +1,10 @@
+fractional unit seems to be a very versatile tool to manage grid template.
+
+It divides the remaining space by the number of fr units declared, so we don't have to waste time on specifying each and every size.
+
+If you want to make a grid of 3 columns with the first column taking 200px and the other two taking 40% and 60% of the remaining spaces:
+
+  .container {
+    display: grid;
+    grid-template-columns: 200px 2fr 3fr;
+  }
