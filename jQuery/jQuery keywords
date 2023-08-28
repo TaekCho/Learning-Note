@@ -1,0 +1,32 @@
+Query Selector
+
+document.querySelector() == jQuery() == $();
+
+innerText = .text("");
+innerHTML = .html("<div>sentences inside</div>");
+style = .css("attribute","value");
+classList.add = .addClass("");
+setAttribute = .attr("attribute","value") OR even this is possible: .attr('class','class-name');
+
+
+starting with:
+<h1>annyeong</h1>
+
+We can add another html element with the following:
+  $("h1").before("<button>New</button>"); == <button>New</button><h1>annyeong</h1>
+
+  $("h1").after("<button>New</button>"); == <h1>annyeong</h1><button>New</button>
+
+OR,
+  $("h1").prepend("<button>New</button>"); == <h1><button>New</button>annyeong</h1>
+  The code above will insert the New button in the beginning of the inner content of the selected element.
+
+  $("h1").append("<button>New</button>"); == <h1>annyeong<button>New</button></h1>
+  This code will do just the same, but in the end of the content within the element.
+
+
+$(document)
+
+events
+.click(function);
+.keypress(function);
