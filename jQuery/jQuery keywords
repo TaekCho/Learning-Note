@@ -33,4 +33,7 @@ events
 
 
 Element removal:
-$('element').remove()
+$('element').remove();
+
+Hiding an element:
+$('element').hide();
