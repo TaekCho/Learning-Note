@@ -37,3 +37,19 @@ $('element').remove();
 
 Hiding an element:
 $('element').hide();
+
+Showing a hidden element:
+$('element').show();
+
+Toggling on & off an element:
+$('element').toggle();
+
+Similar function as above, but gradual:
+$('element').fadeToggle();
+$('element').fadeIn();
+$('element').fadeOut();
+
+OR gradual sliding:
+$('element').slideToggle();
+$('element').slideUp();
+$('element').slideDown();
