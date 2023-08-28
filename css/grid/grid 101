@@ -21,3 +21,29 @@ How to use Grid:
 
 
 `grid-auto` attribute sets up the width or height of overflowing elements. ( grid-auto-rows / grid-auto-columns )
+
+
+How to make an element to span over 2 grid areas.
+  Horizontal: { grid-column: span 2 } == { grid-column-start: span 2; grid-column-end: auto;}
+  Vertical: { grid-row: span 2 } == { grid-row-start: span 2; grid-row-end: auto;}
+
+
+Order attribute
+  `order` works relatively like an index. So, apart from readability, it would not matter even if you set a order value as 10, as it would not be placed in the 10th of items,
+    but will be placed after all the other elements which have lesser value than 10. Default `order` value is 0.
+
+To locate a grid element at a specific area:
+  {
+    1. grid-column-start: 1;
+    2. grid-column-end: 3;
+      == grid-column: 1 / 3;
+    3. grid-row-start: 2;
+    4. grid-row-end: 3;
+      == grid-row 2 / 3;
+  }
+  == grid-area: 2 / 1 / 3 / 3;
+  /* ^^^^^^^^^ this represents grid-row-start / grid-column-start / grid-row-end / grid-column-end;
+                Simply speaking, row / column order from start to end.
+
+  These attributes help set a grid element at a very specific place,
+    or even stretch the element across the grid as specified.
