@@ -53,3 +53,4 @@ OR gradual sliding:
 $('element').slideToggle();
 $('element').slideUp();
 $('element').slideDown();
+$('element').animate({cssAttribute:cssValue});
