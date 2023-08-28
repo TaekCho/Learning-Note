@@ -1,0 +1,9 @@
+function Menu (name, price, supplier, cookingTime, isKoreanCuisine) {
+  this.name = name;
+  this.price = price;
+  this.supplier = supplier;
+  this.cookingTime = cookingTime;
+  this.isKoreanCuisine = isKoreanCuisine;
+}
+
+let porkBelly = new Menu('Pork Belly', 20.99, "Butcher's", 180, true);
