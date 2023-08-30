@@ -1,0 +1,7 @@
+ls: list of files in the current directory
+touch: create a file
+open: open a file
+pwd: print working directory
+cd: change directory (move to the target)
+rm: remove files
+rm -r (dirName): remove a directory
