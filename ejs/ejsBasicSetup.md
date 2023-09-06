@@ -1,8 +1,7 @@
 <h1>EJS basic setup</h1>
 
-<code>
+```
 import express from "express";
-
 const app = express();
 const port = 3000;
 
@@ -24,7 +23,7 @@ app.get("/contact", (req, res) => {
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
-</code>
+```
 
 <h2>header.ejs File</h2>
 
